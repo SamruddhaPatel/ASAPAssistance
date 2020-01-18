@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASAP Assisstance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="container">
+            <h2>User Information</h2>
+            <div class="alert alert-success success-message" style="display:none;">Information submitted successfully.</div>
+			<table class="table table-striped" id="ex-table">
+				<thead class="thead-inverse">
+					<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Mood</th>
+					<th>Time</th>
+					<th>Location</th>
+					<th>Assisstance Required</th>
+					<th>Phone Number</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+    				<td>Brian</td>
+					<td>0</td>
+					<td>happy</td>
+					<td>00:00</td>
+					<td>address</td>
+					<td>no</td>
+					<td>123456789</td>
+				</tr>
+			   </tbody>
+        </div>
+    </div>
+ 
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyCdoubbT2qARS47TGdpWmA3LUZ8cx09YzQ",
+	    authDomain: "asap-assistance-mxiblm.firebaseapp.com",
+	    databaseURL: "https://asap-assistance-mxiblm.firebaseio.com",
+	    projectId: "asap-assistance-mxiblm",
+	    storageBucket: "asap-assistance-mxiblm.appspot.com",
+	    messagingSenderId: "580727106052",
+	    appId: "1:580727106052:web:0f1dc5fbff38520b1f2351"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
